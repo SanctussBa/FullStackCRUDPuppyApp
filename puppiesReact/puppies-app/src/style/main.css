@@ -1,0 +1,73 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-family: "Urbanist", sans-serif;
+}
+
+
+.article {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 100vh;
+}
+
+.header {
+  width: 100%;
+  background-color: rgb(234, 224, 218);
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+
+.header-title {
+  font-family: "Rubik Vinyl", cursive;
+  text-align: center;
+  font-size: 30px;
+  color: rgb(80, 97, 104);
+}
+
+.main-container {
+  width: 80%;
+  height: 80%;
+  display: flex;
+  margin-top: 5px;
+}
+
+.section-left {
+  width: 70%;
+  margin-right: 5px;
+}
+.section-right {
+  width: 30%;
+}
+.section-add-puppy,
+.section-info,
+.section-list {
+  border: solid 1px rgba(234, 199, 199, 0.5);
+  border-radius: 5px;
+  background-color: rgb(247, 245, 235);
+}
+
+.section-add-puppy,
+.section-info {
+  height: 50%;
+}
+.section-add-puppy {
+    margin-bottom: 5px;
+}
+.section-list {
+  height: 100%;
+  overflow-y: auto;
+}
+.section-title {
+  text-align: center;
+  margin-top: 20px;
+  color: rgb(80, 97, 104);
+  margin-bottom: 20px;
+  background-color: white;
+  padding: 20px;
+}
