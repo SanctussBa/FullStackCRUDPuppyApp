@@ -19,8 +19,9 @@ const AddPuppyForm = (props: Props) => {
             type="text"
             value={addPuppy.name}
             onChange={handleChange}
+            required
           />
-          <input type="hidden" name ="puppyId" value={Date.now().toString()} />
+          <input type="hidden" name="puppyId" value={Date.now().toString()} />
         </div>
         <div className="form-line">
           <label className="form-label">Breed : </label>
@@ -29,6 +30,7 @@ const AddPuppyForm = (props: Props) => {
             type="text"
             value={addPuppy.breed}
             onChange={handleChange}
+            required
           />
         </div>
         <div className="form-line">
@@ -38,6 +40,7 @@ const AddPuppyForm = (props: Props) => {
             type="date"
             value={addPuppy.birthDate.substring(0, 10)}
             onChange={handleChange}
+            required
           />
         </div>
         <div className="form-line">

@@ -56,6 +56,7 @@ const Puppy = (props: Props) => {
             type="text"
             value={puppyName}
             onChange={onNameChange}
+            required
           />
         </div>
         <div className="form-line">
@@ -65,6 +66,7 @@ const Puppy = (props: Props) => {
             type="text"
             value={puppyBreed}
             onChange={onBreedChange}
+            required
           />
         </div>
         <div className="form-line">
@@ -74,11 +76,16 @@ const Puppy = (props: Props) => {
             type="date"
             value={puppyBirthDate.substring(0, 10)}
             onChange={onBirthDateChange}
+            required
           />
         </div>
         <div className="form-line">
           <div className="form-label"></div>
-          <input  className="add-puppy-button" type="submit" value="Edit Puppy" />
+          <input
+            className="add-puppy-button"
+            type="submit"
+            value="Edit Puppy"
+          />
         </div>
       </form>
     </div>

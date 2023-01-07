@@ -11,6 +11,7 @@ const Home = () => {
   const [addPuppy, setAddPuppy] = useState<IPuppy>(emptyForm);
   const [puppyToShow, setPuppyToShow] = useState<IPuppy>(emptyForm);
   const [showEditForm, setShowEditForm] = useState<boolean>(false);
+  const [puppyIndex, setPuppyIndex] = useState<number>(0);
 
   const fetchListOfPuppies = async () => {
     const response = await fetch("https://localhost:7253/api/Puppies");
@@ -119,6 +120,7 @@ const Home = () => {
                 puppyToShow={puppyToShow}
                 deletePuppy={deletePuppy}
                 editPuppy={() => setShowEditForm(true)}
+                puppyIndex={puppyIndex}
               />
             )}
             {showEditForm && (
@@ -142,6 +144,8 @@ const Home = () => {
                   key={index}
                   setPuppyToShow={setPuppyToShow}
                   setShowEditForm={setShowEditForm}
+                  index={index}
+                  setPuppyIndex={setPuppyIndex}
                 />
               );
             })}
