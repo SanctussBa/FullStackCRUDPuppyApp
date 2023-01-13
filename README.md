@@ -68,6 +68,20 @@ If there are no errors it means you are connected to database successfully. Doub
 
 ## Configure React App
 
+
+### Configure Unsplash API
+
+1. If you do not have Unsplash account yet. [Register as developer](https://unsplash.com/developers)
+2. Create new app under your account and you will get App Access Key
+3. In React project `puppies-app\src\Components\PuppyInfo.tsx` file add your Client Id in url:
+```Typescript
+const response = await fetch(
+      "https://api.unsplash.com/search/photos?page=1&query=puppy&client_id=[Your Unsplash Access Key]" // <-- HERE YOU HAVE TO ADD YOUR UNSPLASH ACCESS KEY
+    );
+```
+
+### Run React App
+
 1. Go into `puppiesReact/puppies-app/` directory
 2. Install all packages and dependancies
 ```
