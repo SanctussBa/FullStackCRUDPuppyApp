@@ -1,4 +1,4 @@
-# Puppies-React-Typeschript App (full-stack)
+# Puppies-React-TypeScript App (full-stack)
 
 ## Demo of this app:
 ![alt text](https://github.com/SanctussBa/FullStackCRUDPuppyApp/blob/master/demo.gif?raw=true)
@@ -9,17 +9,17 @@
 
 ## What is this project about?
 
-* This Application simulates Puppy adoption administration app. User can add new Puppy, fill up form providing
+* This Application simulates simple Puppy adoption administration app. User can add new Puppy, fill up the form providing
 new puppy name, breed and birth date. All basic `CRUD` (Create, Read, Update, Delete) operations are functional.
-* This project serves as React, Typescript learning project.
+* This project serves as React, TypeScript learning project.
 
 ## What technologies were used?
 
 Full Stack Web Application 
-* This is full stack application. Back-end is `.net web api`
+* This is full stack application. Back-end is `.NET Web API`
 * Store products are saved in `SQL database`. 
 * `React` with `TypeScript`
-* 3rd party API for images - Unsplash API
+* 3rd party API for images - `Unsplash API`
 
 # Main features of this app:
 Simple application where user can add puppy by filling form (name, breed and birth date). It adds it to List of puppyies.
